@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+    <title>Макет 1.3</title>
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+
+  <body>
+    <!--Шапка 320px-1120px-->
+    <header class="header">
+
+      <nav class="header__nav nav">
+
+        <a href="#" class="header__link nav__menu menu">
+          <img src="../images/menu.svg" alt="Меню сайта" class="menu__img">
+        </a>
+
+        <!--Разделитель слева 768px-1120px-->
+        <img src="../images/divider.svg" class="nav__divider--left">
+       
+
+        <div class="nav__logo logo">
+          <a href="#" class="logo__link">
+            <img src="../images/logo.svg" alt="Логотип" class="logo__img">
+          </a>
+        </div>
+
+        <!--Ссылки 768px-1120px-->
+        <a href="#" class="header__link nav__call call">
+          <img src="../images/call.svg" alt="Телефон" class="call__img">
+        </a>
+
+        <a href="#" class="header__link nav__msg msg">
+          <img src="../images/msg.svg" alt="Сообщение" class="msg__img">
+        </a>
+
+        <a href="#" class="header__link nav__profile profile">
+          <img src="../images/profile.svg" alt="Профиль" class="profile__img">
+        </a>
+        <!--Конец ссылок 768px-1120px-->
+
+        <img src="../images/divider.svg" class="nav__divider--right">
+
+        <a href="#" class="header__link nav__request request">
+          <img src="../images/request.svg" alt="Оставить заявку" class="request__img">
+        </a>
+
+        <a href="#" class="header__link nav__status status">
+          <img src="../images/status.svg" alt="Статус ремонта" class="status__img">
+        </a>
+
+       </nav> 
+
+    </header>
+    <!--Конец шапки 320px-1120px-->
+
+
+    <!--Основной контент-->
+    <main class="servises-page">
+
+      <!--Хайлайт у заголовка-->
+      <img src="../images/highlight.svg" class="servises-page__highlight">
+      
+      
+      <!--Шапка 1120px+-->
+      <div class="servises-page__header">      
+
+        <h1 class="servises-page__head">Услуги и сервисы</h1>
+
+        <a href="#" class="servises-page__link request-link">
+          <span class="servises-page__link-text request__text">Оставить заявку</span> 
+          <span class="servises-page__link-form request__form"><img src="../images/request.svg" alt="request" class="request__img"></span>
+        </a>
+
+        <a href="#" class="servises-page__link status-link">
+          <span class="servises-page__link-text status__text">Статус ремонта</span>
+          <span class="servises-page__link-form status__form"><img src="../images/status.svg" alt="status" class="status__img"></span>
+        </a>
+
+      </div>
+      <!--Конец шапки 1120px+-->
+      
+      <!--Разделы-->
+      <nav class="servises-page__nav s-nav">
+
+        <ul class="s-nav__servises servises">
+              
+            <a href="#" class="servises__item-link servises__item-link--active">
+              <li class="servises__item">
+              Ремонтируемые устройства</li></a>
+
+            <a href="#" class="servises__item-link">
+              <li class="servises__item">
+              Ремонтируемые бренды</li></a>
+
+            <a href="#" class="servises__item-link">
+              <li class="servises__item">
+              Цены на услуги</li></a>
+
+            <a href="#" class="servises__item-link">
+              <li class="servises__item">
+              Адреса сервисных центров</li></a>
+
+            <a href="#" class="servises__item-link">
+              <li class="servises__item">
+              Специальные цены</li></a>
+
+            <a href="#" class="servises__item-link">
+              <li class="servises__item">
+              Отзывы</li></a>
+
+          </ul>
+      </nav>
+      <!--Конец разделов-->
+
+      <!--Основной контент страницы Услуги и сервисы-->
+      <section class="servises-page__content content">
+
+        <!--Блок "текст + читать далее"-->
+        <div class="content__elem">
+          <!--Блок "текст"-->
+          <div class="content__container">
+            <p class="content__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. 
+            Только у нас вы можете отремонтировать свой ноутбук Dell 
+            с официальной гарантией производителя.</p><br>
+            <p class="content__text">
+            Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, 
+            что подтверждает большое количество постоянных клиентов. Мы гордимся тем, 
+            что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+          </div>
+          <!--Конец блока "текст"-->
+        
+           <button type="button" class="content__more-button more-button">
+            <img src="../images/more-button.svg" class="more-button__img">Читать далее</button>
+        </div>
+        <!--Конец блока "текст + читать далее"-->
+
+        <img src="../images/office.jpg" alt="Изображение офиса" class="content__office-img">
+        
+      </section>
+      <!--Конец основного контента страницы Услуги и сервисы-->
+
+      </main>
+  </body>
+</html>
