@@ -1,0 +1,252 @@
+@font-face {
+    font-family: 'TT Lakes';
+    src: local('TT Lakes Regular'), local('TTLakes-Regular'),
+      url('../fonts/TTLakes-Regular.woff') format('woff'),
+      url('../fonts/TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} 
+    
+    
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('TTLakes-Bold.eot');
+    src: local('TT Lakes Bold'), local('TTLakes-Bold'),
+      url('../fonts/TTLakes-Bold.woff') format('woff'),
+      url('../fonts/TTLakes-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+    
+@font-face {
+    font-family: 'TT Lakes';
+    src: local('TT Lakes Medium'), local('TTLakes-Medium'),
+      url('../fonts/TTLakes-Medium.woff') format('woff'),
+      url('../fonts/TTLakes-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+    background-color: #F8F8F8;
+}
+
+body {
+    font-family: 'TT Lakes';
+    font-weight: normal;
+    font-style: normal;
+    color: #7E7E82;
+    margin: 0;
+    padding: 0;
+}
+
+/*head*/
+
+.header {
+    height: 80px;
+    background: linear-gradient(to right, #F8F8F8 25%, #FFFFFF);
+
+    border-top: 1px solid #D9FFF5;
+    display: flex;
+    align-items: center;
+}
+
+
+.header__head {
+    font-weight: normal;
+    font-size: 16px;
+    margin-left: 16px;
+    display: inline-block;
+    width: 288px;
+}
+    
+@media (min-width:768px) {
+    .header {
+        height: 56px;
+    }
+
+    .header__head {
+        margin-left: 24px;
+        width: 100%;
+    }
+}
+    
+/*head end*/
+
+/*brands*/
+
+.swiper {
+    height: 116px;
+    transition: height 10s ease-in;
+}
+
+.swiper-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 116px;
+    padding: 16px;
+}
+
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    min-width: 240px;
+    max-width: 240px;
+    max-height: 72px;
+    background-color:  #FFFFFF;
+    border-radius: 6px;
+    border: 1px solid #EAEAEA;
+    box-sizing: border-box;
+}
+
+.swiper-pagination {
+    top: 90px;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+}
+
+.swiper-pagination-bullet-active {
+    --swiper-theme-color: #B5B6BC;
+}
+
+.brands__logo {
+    margin-left: 16px;
+}
+
+.brands__link {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #FF3E79;
+    background-color: transparent;
+    margin-right: 16px;
+    position: relative;
+    transition: all 0.2s ease-in;
+}
+
+.brands__link::after {
+    content: url(../images/arrow.svg);
+    position: absolute;
+    left: 17px;
+    top: 10px;
+}
+
+
+/*так нужно, свг лого эпл не отцентрована и выглядит не
+посередине, хотя она там, и меня это бесит, попробуйте 
+отключить это свойство, ну бесит же, ну правда*/
+.apple {
+    transform: translateY(-3px);
+}
+
+.button {
+    display: none;
+}
+
+@media (min-width:768px) {
+    .swiper {
+        height: 200px;
+        overflow: hidden;
+    }
+
+    .swiper--full {
+        height: auto;
+    }
+    
+    .swiper-wrapper {
+        flex-wrap: wrap;
+        max-width: 770px;
+        padding: 24px;
+    }
+
+    .swiper-slide {
+        min-width: 224px;
+        max-width: 224px;
+        min-height: 72px;
+        max-height: 72px;
+        margin-bottom: 16px;
+        margin-right: 24px;
+    }
+
+    .swiper-slide:nth-child(3n) {
+        margin-right: 0;
+    }
+
+    .brands__link:hover {
+        transform: scale(1.2);
+        background-color: 	#FFEFD5;
+    }
+
+    .button__show-more {
+        display: block;
+        font-family: inherit;
+        border: none;
+        background-color: transparent;
+        margin-left: 32px;
+
+        font-weight: 500;
+        font-style: normal;
+        font-size: 16px;
+    }
+
+    .button__hide {
+        display: block;
+        font-family: inherit;
+        border: none;
+        background-color: transparent;
+        margin-left: 32px;
+
+        font-weight: 500;
+        font-style: normal;
+        font-size: 16px;
+    }
+
+    .button__show-more::before {
+        content: url(../images/more-button.svg);
+        margin-right: 17px; 
+    }
+
+    .button__hide::before {
+        content: url(../images/less-button.svg);
+        margin-right: 17px; 
+    }
+
+    .button__hidden {
+        display: none;
+    }
+
+    .button {
+        transition: opacity 0.5s ease;
+    }
+
+    .button:hover {
+        opacity: 0.5;
+    }
+
+
+}
+
+@media (min-width:1024px) {
+    .swiper-wrapper {
+        flex-wrap: wrap;
+        max-width: 1024px;
+        padding: 24px;
+    }
+
+    .swiper-slide:nth-child(3n) {
+        margin-right: 24px;
+    }
+
+    .swiper-slide:nth-child(4n) {
+        margin-right: 0;
+    }
+}

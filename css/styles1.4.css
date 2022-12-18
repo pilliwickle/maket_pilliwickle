@@ -1,0 +1,277 @@
+@font-face {
+    font-family: 'TT Lakes';
+    src: local('TT Lakes Regular'), local('TTLakes-Regular'),
+      url('../fonts/TTLakes-Regular.woff') format('woff'),
+      url('../fonts/TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} 
+    
+    
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('TTLakes-Bold.eot');
+    src: local('TT Lakes Bold'), local('TTLakes-Bold'),
+      url('../fonts/TTLakes-Bold.woff') format('woff'),
+      url('../fonts/TTLakes-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+    
+@font-face {
+    font-family: 'TT Lakes';
+    src: local('TT Lakes Medium'), local('TTLakes-Medium'),
+      url('../fonts/TTLakes-Medium.woff') format('woff'),
+      url('../fonts/TTLakes-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+/*General view*/
+html {
+    box-sizing: border-box;
+    height: 100%;
+    background-color: #F2F2F2;
+}
+
+body {
+    font-family: 'TT Lakes';
+    font-weight: 500;
+    font-style: normal;
+    color: #1B1C21;
+}
+
+.menu-body {
+    display: flex;
+    flex-direction: column; 
+    height: 100%;
+  
+    margin: 0;
+    padding: 0;
+
+    width: 320px;
+    min-height: 790px;
+  
+    margin: 0;
+  
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 50px #aba9a9;
+}
+
+.footer {
+    margin-top: auto; 
+}
+/*General view end*/
+
+/*Top view*/
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 34px;
+}
+
+/*Top view end*/
+
+/*Servises view*/
+
+.sections__item {
+    list-style-type: none; 
+}
+
+.sections__link {
+    display: block;
+    outline: none;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+
+    transition: color 0.2s ease-in-out;
+}
+
+.sections__link:hover {
+    color: #FF3E79;
+}
+
+/*Servises view end*/
+
+/*Footer view*/
+
+.footer__buttons {
+    display: flex;
+    justify-content: start;
+
+    margin-top: 0;
+    margin-bottom: 16px; 
+}
+
+.call {
+    margin: 0 16px 0 24px;
+}
+
+.msg {
+    margin: 0 16px 0 0;
+}
+
+.profile {
+    margin: 0 auto 0 0;
+}
+
+.footer__email {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 auto 12px 24px;
+}
+
+.footer__phone-number {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: bold;
+    font-style: normal;
+
+    margin: 0 auto 40px 24px;
+}
+
+.lang {
+    margin: 0 auto 32px 24px;
+}
+
+.lang-button {
+    border: none;
+    outline: none;
+    font-family: inherit;
+    background-color: #FFFFFF;
+}
+
+.lang--active {
+    color: #7E7E82;
+}
+
+/*Footer view end*/
+
+/*Buttons & buttons images wiew*/
+
+.head__button, .footer__button {
+    border: none;
+    outline: none;
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+    background-color: #FF3E79;
+    border: none;
+  
+    position: relative;
+
+    opacity: 1;
+    transition: opacity 0.2s ease-in;
+}
+
+.head__button:hover, .footer__button:hover {
+    opacity: 0.5;
+}
+
+.exit-menu__img {
+    width: 16px;
+    height: 16px;
+  
+    position: absolute;
+    top: 12px;
+    bottom: 12px;
+    right: 12px;
+    left: 12px;
+}
+
+.search__img {
+    position: absolute;
+    top: 11px;
+    left: 11px;
+}
+
+.call__img {
+    position: absolute;
+    top: 11px;
+    left: 11px;
+}
+
+.msg__img {
+    position: absolute;
+    top: 11px;
+    bottom: 9px;
+    right: 10px;
+    left: 10px;
+}
+
+.profile__img {
+    position: absolute;
+    top: 10px;
+    bottom: 12px;
+    right: 10px;
+    left: 10px;
+}
+
+/*Buttons & buttons images wiew end*/
+
+/*Lang buttons view*/
+
+.lang__button {
+    border: none;
+    outline: none;
+    font-family: inherit;
+    background-color: #FFFFFF;
+
+    transition: font-weight 0.2s ease;
+    font-weight: 500;
+}
+
+.lang__button:hover {
+    color: #1B1C21;
+    font-weight: 700;
+}
+
+/*Lang buttons view end*/
+
+/*Top buttons location*/
+
+.exit-menu {
+    margin: 23px 17px 23px 24px;
+}
+
+.search {
+    margin: 23px 24px 23px auto;
+}
+
+/*Top buttons location end*/
+
+/*Sections options*/
+
+.sections {
+    margin: 0;
+    padding: 0;
+}
+
+.sections__link {
+    margin-bottom: 32px;
+}
+
+.sections__item {
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 24px;
+}
+
+.sections__item--active {
+    color: #7E7E82;
+}
+
+.sections__item--active::before {
+    content: url(../images/highlight.svg);
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+}
+
+/*Sections options end*/
+
